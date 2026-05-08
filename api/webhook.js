@@ -1,8 +1,8 @@
 const crypto = require('crypto');
 const axios = require('axios');
 
-const CHANNEL_SECRET = process.env.CHANNEL_SECRET;
-const CHANNEL_ACCESS_TOKEN = process.env.CHANNEL_ACCESS_TOKEN;
+const CHANNEL_SECRET = 'd4cb4e9cf99193d494a24261e57de8f4';
+const CHANNEL_ACCESS_TOKEN = 'pPurbLmfHJl13/MXURuM/4/UAxLpXqmjb82fkI5TO8ewDzn1skA4a2yDWra2PG7PfFmckWpDPqahbTqhBtCtjQ+em5cyxYG/rA2JQBoR2F1FL5G4WGJJYXt5pdkfobVa8goTDqFpjPtWvDH3UiJbPAdB04t89/1O/w1cDnyilFU=';
 
 export default async function handler(req, res) {
   if (req.method !== 'POST') return res.status(405).send('Method Not Allowed');
